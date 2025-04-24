@@ -21,28 +21,28 @@ const Navbar: React.FC = () => {
         <NavigationMenu>
           <NavigationMenuList className="gap-1">
             <NavigationMenuItem>
-              <Link to="/">
-                <NavigationMenuLink className="flex items-center px-4 py-2 text-sm rounded-md hover:bg-slate-100 transition-colors">
+              <NavigationMenuLink asChild>
+                <Link to="/" className="flex items-center px-4 py-2 text-sm rounded-md hover:bg-slate-100 transition-colors">
                   <HomeIcon className="h-4 w-4 mr-2" />
                   Главная
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/authors">
-                <NavigationMenuLink className="flex items-center px-4 py-2 text-sm rounded-md hover:bg-slate-100 transition-colors">
+              <NavigationMenuLink asChild>
+                <Link to="/authors" className="flex items-center px-4 py-2 text-sm rounded-md hover:bg-slate-100 transition-colors">
                   <Users className="h-4 w-4 mr-2" />
                   Авторы
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/books">
-                <NavigationMenuLink className="flex items-center px-4 py-2 text-sm rounded-md hover:bg-slate-100 transition-colors">
+              <NavigationMenuLink asChild>
+                <Link to="/books" className="flex items-center px-4 py-2 text-sm rounded-md hover:bg-slate-100 transition-colors">
                   <BookOpen className="h-4 w-4 mr-2" />
                   Книги
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
